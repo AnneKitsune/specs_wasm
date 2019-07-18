@@ -1,0 +1,23 @@
+[package]
+name = "specs_wasm"
+version = "0.1.0"
+authors = ["Joël Lupien (Jojolepro) <jojolepromain@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+specs = "*"
+#web_worker = { git = "https://github.com/jojolepro/web_worker" }
+web_worker = { path = "../web_worker" }
+#wasm-bindgen = { version = "0.2.48", features = ['serde-serialize'] }
+wasm-bindgen = { path = "../wasm-bindgen", features = ['serde-serialize'] }
+
+[patch.crates-io]
+wasm-bindgen = { path = '../wasm-bindgen' }
+wasm-bindgen-futures = { path = '../wasm-bindgen/crates/futures' }
+js-sys = { path = '../wasm-bindgen/crates/js-sys' }
+web-sys = { path = '../wasm-bindgen/crates/web-sys' }

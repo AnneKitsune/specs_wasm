@@ -1,0 +1,11 @@
+/shareddata/share/prog/rust/specs_wasm/crates/cli/target/debug/deps/ppv_lite86-259d28981eb16ede.rmeta: /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/lib.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/soft.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/types.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/mod.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/sse2.rs
+
+/shareddata/share/prog/rust/specs_wasm/crates/cli/target/debug/deps/libppv_lite86-259d28981eb16ede.rlib: /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/lib.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/soft.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/types.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/mod.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/sse2.rs
+
+/shareddata/share/prog/rust/specs_wasm/crates/cli/target/debug/deps/ppv_lite86-259d28981eb16ede.d: /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/lib.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/soft.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/types.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/mod.rs /home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/sse2.rs
+
+/home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/lib.rs:
+/home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/soft.rs:
+/home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/types.rs:
+/home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/mod.rs:
+/home/jojolepro/.cargo/registry/src/github.com-1ecc6299db9ec823/ppv-lite86-0.2.5/src/x86_64/sse2.rs:

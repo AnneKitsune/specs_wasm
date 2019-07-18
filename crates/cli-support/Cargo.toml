@@ -1,0 +1,26 @@
+[package]
+name = "wasm-bindgen-cli-support"
+version = "0.2.48"
+authors = ["The wasm-bindgen Developers"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/rustwasm/wasm-bindgen/tree/master/crates/cli-support"
+homepage = "https://rustwasm.github.io/wasm-bindgen/"
+documentation = "https://docs.rs/wasm-bindgen-cli-support"
+description = """
+Shared support for the wasm-bindgen-cli package, an internal dependency
+"""
+edition = '2018'
+
+[dependencies]
+base64 = "0.9"
+failure = "0.1.2"
+log = "0.4"
+rustc-demangle = "0.1.13"
+serde_json = "1.0"
+tempfile = "3.0"
+walrus = "0.8.0"
+wasm-bindgen-anyref-xform = { path = '../anyref-xform', version = '=0.2.48' }
+wasm-bindgen-shared = { path = "../shared", version = '=0.2.48' }
+wasm-bindgen-threads-xform = { path = '../threads-xform', version = '=0.2.48' }
+wasm-bindgen-wasm-interpreter = { path = "../wasm-interpreter", version = '=0.2.48' }
+wasm-webidl-bindings = "0.1.2"

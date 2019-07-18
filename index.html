@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <style>
+      #scene {
+        height: 100%;
+        width: 500px;
+        float: left;
+      }
+
+      #render, .concurrency, .timing {
+        padding: 20px;
+        margin: 20px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <button disabled id='render'>Loading wasm...</button>
+    <div class='concurrency'>
+      <p id='concurrency-amt'>Concurrency: 1</p>
+      <br/>
+      <input disabled type="range" id="concurrency" min="0" max="1" />
+    </div>
+    <div id='timing'>
+      Render duration:
+      <p id='timing-val'></p>
+    </div>
+
+
+    <canvas id='canvas'></canvas>
+
+    <script src='specs_wasm.js'></script>
+    <script src='index.js'></script>
+  </body>
+</html>

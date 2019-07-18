@@ -1,0 +1,23 @@
+[package]
+name = "wasm-bindgen-webidl"
+version = "0.2.48"
+authors = ["The wasm-bindgen Developers"]
+license = "MIT/Apache-2.0"
+categories = ["wasm"]
+repository = "https://github.com/rustwasm/wasm-bindgen/tree/master/crates/webidl"
+homepage = "https://rustwasm.github.io/wasm-bindgen/"
+documentation = "https://docs.rs/wasm-bindgen"
+description = """
+Support for parsing WebIDL specific to wasm-bindgen
+"""
+edition = "2018"
+
+[dependencies]
+failure = "0.1.2"
+heck = "0.3"
+log = "0.4.1"
+proc-macro2 = "0.4.8"
+quote = '0.6'
+syn = { version = '0.15', features = ['full'] }
+wasm-bindgen-backend = { version = "=0.2.48", path = "../backend" }
+weedle = "0.10"
