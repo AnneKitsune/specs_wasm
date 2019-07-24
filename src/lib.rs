@@ -1,8 +1,15 @@
+//! A simple example of the specs ecs running on wasm.
+//! Runs only on firefox nightly with the shared memory option enabled (in about:config).
+
 use specs::prelude::*;
 use std::sync::Arc;
 use wasm_bindgen::prelude::*;
 use web_worker::*;
 
+/// Runs the test.
+/// We create a rayon thread pool from the given worker pool and concurrency (desired thread
+/// count), then we create a shred/specs world and dispatcher and insert a ton of entities, then we
+/// run the dispatcher a couple of times.
 #[wasm_bindgen]
 pub fn run_test(concurrency: usize, pool: &WorkerPool) {
     init_panic_hook();
@@ -24,24 +31,10 @@ pub fn run_test(concurrency: usize, pool: &WorkerPool) {
             dispatch.dispatch(&mut world);
             world.maintain();
         }
-    });
+    }).unwrap();
 }
 
-#[wasm_bindgen]
-pub struct BBBB;
-
-#[wasm_bindgen]
-impl BBBB {
-    #[wasm_bindgen(constructor)]
-    pub fn new(object: &JsValue) -> Result<BBBB, JsValue> {
-        Ok(BBBB)
-    }
-
-    #[wasm_bindgen]
-    pub fn something() {}
-}
-
-pub struct Comp {
+struct Comp {
     a: usize,
     b: usize,
 }
@@ -50,7 +43,7 @@ impl Component for Comp {
     type Storage = VecStorage<Self>;
 }
 
-pub struct Sys;
+struct Sys;
 
 impl<'a> System<'a> for Sys {
     type SystemData = (ReadStorage<'a, Comp>,);
