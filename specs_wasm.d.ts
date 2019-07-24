@@ -1,7 +1,9 @@
 /* tslint:disable */
 /**
+* @param {number} concurrency 
+* @param {WorkerPool} pool 
 */
-export function run_test(): void;
+export function run_test(concurrency: number, pool: WorkerPool): void;
 /**
 * Entry point invoked by `worker.js`, a bit of a hack but see the \"TODO\" above
 * about `worker.js` in general.

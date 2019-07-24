@@ -44,16 +44,11 @@ function run() {
 
   // Configure various buttons and such.
   button.onclick = function() {
-      console.log('stuff and things');
-      let something = new BBBB();
+      console.log('run start');
+      run_test(navigator.hardwareConcurrency, pool);
+      console.log('run stop');
 
-      console.log('thingy: '+JSON.stringify(something));
-
-      run_test();
-
-      something.something();
       //run_test();
-      console.log('stuff and things2');
   }
   button.disabled = false;
   button.innerText = 'Run!';
