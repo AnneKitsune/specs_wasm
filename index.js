@@ -27,7 +27,7 @@ function loadWasm() {
     return
   }
 
-  wasm_bindgen('./specs_wasm_bg.wasm')
+  wasm_bindgen('./build/specs_wasm_bg.wasm')
     .then(run)
     .catch(console.error);
 }

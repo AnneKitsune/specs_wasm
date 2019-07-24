@@ -1,2 +1,5 @@
 /target
+/wasm-bindgen/target
+**/target
 **/*.rs.bk
+/build

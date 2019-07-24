@@ -1,5 +1,5 @@
 // synchronously, using the browser, import out shim JS scripts
-importScripts('specs_wasm.js');
+importScripts('./build/specs_wasm.js');
 
 let booted = false;
 let lastPtr = null;

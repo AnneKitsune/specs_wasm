@@ -16,8 +16,8 @@ RUSTFLAGS='-C target-feature=+atomics' xargo build --target wasm32-unknown-unkno
 # here to turn it on for our bindings generation. Also note that webpack isn't
 # currently compatible with atomics, so we go with the --no-modules output.
 WASM_BINDGEN_THREADS=1 \
-  cargo run --manifest-path ./crates/cli/Cargo.toml \
+  cargo run --manifest-path ./wasm-bindgen/crates/cli/Cargo.toml \
     --bin wasm-bindgen -- \
-    ./target/wasm32-unknown-unknown/release/specs_wasm.wasm --out-dir ./ \
+    ./target/wasm32-unknown-unknown/release/specs_wasm.wasm --out-dir ./build \
     --no-modules
 python3 -m http.server
