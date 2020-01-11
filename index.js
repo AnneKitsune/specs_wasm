@@ -34,7 +34,7 @@ function loadWasm() {
 
 loadWasm();
 
-const { run_test, BBBB, WorkerPool } = wasm_bindgen;
+const { run_test, Comp, WorkerPool } = wasm_bindgen;
 
 function run() {
   // The maximal concurrency of our web worker pool is `hardwareConcurrency`,
